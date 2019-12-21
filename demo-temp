@@ -1,9 +1,6 @@
 package com.company;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
 
 public class Main {
     public static void main(String[] args) throws ExceptionNumbers {
@@ -13,7 +10,6 @@ public class Main {
         distribution.enterNumbers(input);
     }
 }
-
 class Distribution{
     ArrayList<String> list = new ArrayList<>();
     public void enterNumbers(String input) throws ExceptionNumbers{
@@ -45,7 +41,7 @@ class Distribution{
                 }
             }
         }catch (Exception e){
-            throw new ExceptionNumbers("Please, corrrect your numbers");
+            throw new ExceptionNumbers("Please, correct your enter");
         }
     }
     public void normalNumber () throws ExceptionNumbers{
@@ -71,7 +67,7 @@ class Distribution{
                 }
                 call.normalNumbers(inMethodList.get(0), inMethodList.get(1), inMethodList.get(2));
             }catch (Exception e){
-                throw new ExceptionNumbers("Please, corrrect your numbers");
+                throw new ExceptionNumbers("Please, correct your enter");
             }
     }
     public void arifmeticNumbers() throws ExceptionNumbers{
@@ -97,7 +93,7 @@ class Distribution{
             try {
                 call.arifmetica(inMethodList.get(0), inMethodList.get(1), inMethodList.get(2));
             }catch (Exception e){
-                throw new ExceptionNumbers("Please, correct your nubmers");
+                throw new ExceptionNumbers("Please, correct your enter");
             }
     }
 }
