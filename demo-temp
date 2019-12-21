@@ -193,7 +193,6 @@ class Arifmetic {
         }
         if (operator.contains("-")) {
             relust = transferFirst - transferSecond;
-            System.out.println(relust);
         }
         if (operator.contains("/")) {
             relust = transferFirst / transferSecond;
