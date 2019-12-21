@@ -203,7 +203,7 @@ class Arifmetic {
                 relust -= arabic[i];
             }
         }
-        System.out.println(romanNumerals.toString());
+        System.err.println(romanNumerals.toString());
     }
 }
 class ExceptionNumbers extends Exception{
