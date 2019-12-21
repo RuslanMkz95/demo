@@ -1,10 +1,6 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 
@@ -36,15 +32,20 @@ class Distribution{
                 }
         }
         list.add(StringBuffer.toString());
-        for (int b = 0; b < 10; b++) {
-            if(input.contains(numbers[b])){
-                normalNumber();
-                break;
+        list.add(StringBuffer.toString());
+        try {
+            for (int b = 0; b < 10; b++) {
+                if (input.contains(numbers[b])) {
+                    normalNumber();
+                    break;
+                }
+                if (input.contains(roman[b])) {
+                    arifmeticNumbers();
+                    break;
+                }
             }
-            if(input.contains(roman[b])){
-                arifmeticNumbers();
-                break;
-            }
+        }catch (Exception e){
+            throw new ExceptionNumbers("Please, corrrect your numbers");
         }
     }
     public void normalNumber () throws ExceptionNumbers{
