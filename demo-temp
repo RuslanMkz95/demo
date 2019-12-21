@@ -28,7 +28,6 @@ class Distribution{
                 }
         }
         list.add(StringBuffer.toString());
-        list.add(StringBuffer.toString());
         try {
             for (int b = 0; b < 10; b++) {
                 if (input.contains(numbers[b])) {
